@@ -1,0 +1,29 @@
+name: Check
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: macos-15
+    steps:
+      # Pinned to a commit: a moved tag cannot change what runs.
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Use this checkout as the tap
+        run: |
+          mkdir -p "$(brew --repository)/Library/Taps/0xrd"
+          ln -s "$GITHUB_WORKSPACE" "$(brew --repository)/Library/Taps/0xrd/homebrew-tap"
+      - name: Style
+        run: brew style 0xrd/tap
+      - name: Audit
+        run: |
+          for cask in Casks/*.rb; do
+            brew audit --cask --online "0xrd/tap/$(basename "$cask" .rb)"
+          done
