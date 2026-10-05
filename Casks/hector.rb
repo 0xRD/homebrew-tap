@@ -39,6 +39,7 @@ cask "hector" do
   caveats <<~EOS
     Hector is not notarized by Apple. On first launch macOS blocks it: open
     System Settings > Privacy & Security and click "Open Anyway" next to Hector.
+    Until then the `hector` command is stopped by macOS too.
 
     Blocking needs Hector's helper. After each upgrade, open Hector and choose
     Blocklists > Update helper... so the helper matches the app.
