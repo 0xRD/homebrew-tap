@@ -12,6 +12,7 @@ cask "hector" do
     strategy :github_latest
   end
 
+  depends_on arch: :arm64
   depends_on macos: :sequoia
 
   app "Hector.app"
