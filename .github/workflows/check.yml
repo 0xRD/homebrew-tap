@@ -27,3 +27,6 @@ jobs:
           for cask in Casks/*.rb; do
             brew audit --cask --online "0xrd/tap/$(basename "$cask" .rb)"
           done
+          for formula in Formula/*.rb; do
+            brew audit --formula --strict --online "0xrd/tap/$(basename "$formula" .rb)"
+          done
