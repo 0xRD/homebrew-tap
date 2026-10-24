@@ -20,4 +20,4 @@ Update with `brew update && brew upgrade`.
 
 These apps and tools are not notarized by Apple (no paid developer account), so macOS asks you to allow them once: System Settings → Privacy & Security → Open Anyway. Each release's SHA-256 is pinned in its cask or formula and checked by Homebrew. Command-line formulae are not quarantined, so they run without that step.
 
-The casks and formulae are updated automatically by each project's release workflow.
+They are updated by each project's release (workflow or release script).
