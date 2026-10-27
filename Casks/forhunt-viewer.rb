@@ -13,7 +13,7 @@ cask "forhunt-viewer" do
   end
 
   depends_on arch: :arm64
-  depends_on :macos
+  depends_on macos: :big_sur
 
   app "forhunt-viewer.app"
 
