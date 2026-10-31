@@ -7,19 +7,19 @@ class Forhunt < Formula
   on_macos do
     depends_on arch: :arm64
     on_arm do
-      url "https://github.com/0xRD/forensic-hunter/releases/download/v0.5.1/forhunt-0.5.1-aarch64-apple-darwin.tar.gz"
-      sha256 "3f32f09ae95e22dc53099c38428289c551717930070e9eaea81155d927579a41"
+      url "https://github.com/0xRD/forensic-hunter/releases/download/v0.6.0/forhunt-0.6.0-aarch64-apple-darwin.tar.gz"
+      sha256 "8ad4e908be7cda39a4efe470543b8784a36a6ff41eaa1be37ea395f6d15d30e5"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/0xRD/forensic-hunter/releases/download/v0.5.1/forhunt-0.5.1-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "15827a1992441c1663d8194b1ab2ef323f4e1555046f7cf6280d28f8c4a7ef26"
+      url "https://github.com/0xRD/forensic-hunter/releases/download/v0.6.0/forhunt-0.6.0-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "8cd562bf3a9035171549c6c9496233a457f57832c7d12d82e36c21c5273b881c"
     end
     on_intel do
-      url "https://github.com/0xRD/forensic-hunter/releases/download/v0.5.1/forhunt-0.5.1-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "94f11615cbd83901f3411a88536c595342672c1ba1ed4a20b6cf129af91561a1"
+      url "https://github.com/0xRD/forensic-hunter/releases/download/v0.6.0/forhunt-0.6.0-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "55f8364a1ee1371ffe7b3a9e6e3b5c4fcc9483058f5632b5b480290404853806"
     end
   end
 
