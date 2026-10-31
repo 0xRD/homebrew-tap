@@ -1,6 +1,6 @@
 cask "hector" do
-  version "0.4.9"
-  sha256 "3687fd70bb89de4b8574149a3a2940ad673b24f8f9691959ed51ad63574139bd"
+  version "0.5.0"
+  sha256 "cb1f21e4389acec8b05dc71540dbdc23805cc814ec85a365f69d2ee8ad7ee629"
 
   url "https://github.com/0xRD/hector/releases/download/v#{version}/Hector-#{version}-macOS.zip"
   name "Hector"
