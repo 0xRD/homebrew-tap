@@ -20,6 +20,8 @@ jobs:
         run: |
           mkdir -p "$(brew --repository)/Library/Taps/0xrd"
           ln -s "$GITHUB_WORKSPACE" "$(brew --repository)/Library/Taps/0xrd/homebrew-tap"
+          # Homebrew refuses to load an untrusted tap; this one is the code under test.
+          brew trust 0xrd/tap
       - name: Style
         run: brew style 0xrd/tap
       - name: Audit
