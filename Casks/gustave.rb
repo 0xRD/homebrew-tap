@@ -1,6 +1,6 @@
 cask "gustave" do
-  version "0.1.4"
-  sha256 "de686d91dc50af5475ee5d5748504bd1e3051b79b71b2c6ec4de5d95f104a773"
+  version "0.1.5"
+  sha256 "d45d60270682033644d59b6d622ffef9d20f8740898bf4addff60ccbfd311fd6"
 
   url "https://github.com/0xRD/gustave/releases/download/v#{version}/Gustave-#{version}-macOS.zip"
   name "Gustave"
