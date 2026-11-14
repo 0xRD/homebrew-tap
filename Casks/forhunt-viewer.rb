@@ -1,6 +1,6 @@
 cask "forhunt-viewer" do
-  version "0.7.1"
-  sha256 "0190d0407dda05d19b4fbfb6df1a7190bdc37fabfcb86581cecb9433fcc374ea"
+  version "0.8.0"
+  sha256 "4a5d8121a0747069322e8b30e2c8677d82692e4d7eefdc14b9d8141f1830fa3b"
 
   url "https://github.com/0xRD/forhunt-viewer/releases/download/v#{version}/forhunt-viewer-#{version}-macos-arm64.dmg"
   name "forhunt-viewer"
